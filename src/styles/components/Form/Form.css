@@ -65,6 +65,7 @@
   width: 100%;
   color: var(--white);
   background-color: var(--primary-purple);
+  font-family: "Nunito Sans", sans-serif;
   border-radius: 6px;
   font-size: 14px;
 }
