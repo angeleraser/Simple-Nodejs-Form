@@ -23,7 +23,9 @@ export const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isValid({ name, email }, setError)) {
-      dispatch(sendFormData(name, email, subject, message));
+      dispatch(
+        sendFormData(name.trim(), email.trim(), subject.trim(), message.trim())
+      );
       reset();
     }
   };

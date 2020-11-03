@@ -31,6 +31,7 @@ export const sendFormData = (name, email, subject, message) => {
       dispatch(formStartSubmit());
       const response = await sendForm(name, email, subject, message);
       const body = await response.json();
+      console.log(body)
       if (body.ok) {
         dispatch(setFormSuccess(true));
       } else {
