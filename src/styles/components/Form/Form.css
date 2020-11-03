@@ -1,0 +1,114 @@
+.form-wrapper {
+  width: 90%;
+  max-width: 460px;
+  background-color: var(--white);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 22px rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  color: var(--dark-purple);
+  flex-direction: column;
+  align-items: center;
+  min-height: 560px;
+}
+
+.form-wrapper h1 {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.form-wrapper h1::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  border-radius: 40px;
+  background-color: var(--dark-purple);
+  height: 16px;
+  margin-right: 12px;
+}
+
+.form-wrapper form,
+.form-wrapper form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.form-wrapper span {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0 0 6px 6px;
+}
+
+.form-wrapper label p {
+  color: var(--danger);
+  margin-top: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  text-indent: 12px;
+}
+
+.form-wrapper form > *:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+  border: 2px solid transparent;
+  width: 100%;
+  color: var(--white);
+  background-color: var(--primary-purple);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-wrapper input:focus,
+.form-wrapper textarea:focus {
+  outline: none;
+  border-color: var(--dark-purple);
+  box-shadow: 0 2px 12px var(--dark-purple);
+}
+
+.form-wrapper input::placeholder,
+.form-wrapper textarea::placeholder {
+  color: var(--dark-purple);
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.form-wrapper input {
+  height: 40px;
+  padding: 0 16px 0 12px;
+  max-width: 320px;
+  transition: all .4s;
+}
+
+.form-wrapper input.invalid {
+  border: 2px solid var(--danger);
+}
+
+.form-wrapper textarea {
+  resize: vertical;
+  padding: 12px;
+  min-height: 180px;
+}
+
+.form-wrapper button {
+  background-color: var(--dark-purple);
+  border: none;
+  padding: 10px 15px;
+  min-width: 124px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--white);
+  font-size: 18px;
+  align-self: flex-end;
+  border-radius: 40px;
+}

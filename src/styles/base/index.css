@@ -1,0 +1,14 @@
+@import "./reset.min.css";
+@import "./settings.css";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--dark-purple);
+  font-family: "Nunito Sans", sans-serif;
+  width: 100%;
+}
